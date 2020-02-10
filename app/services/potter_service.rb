@@ -1,6 +1,6 @@
 class PotterService 
-  def get_house
-    get_json('houses')
+  def get_house(key)
+    get_json('houses/5a05e2b252f721a3cf2ea33f')
      
   end
 
