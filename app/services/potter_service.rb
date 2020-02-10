@@ -1,5 +1,10 @@
 class PotterService 
-  def get_house(key)
+
+  def initialize(house)
+    @house = house
+  end
+
+  def get_house
     get_json('houses/5a05e2b252f721a3cf2ea33f')
   end
 
@@ -10,9 +15,9 @@ class PotterService
   private
 
   def conn
-    Faraday.new(url: "https://www.potterapi.com/v1/") do |f|
+    Faraday.new(url: "https://www.potterapi.com/v1") do |f|
       f.adapter Faraday.default_adapter
-      f.params[:access_token] = ENV[:access_token] 
+      f.params[:key] = ENV["key"]
     end
   end
   

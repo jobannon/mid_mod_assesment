@@ -1,8 +1,7 @@
 class SearchController < ApplicationController 
   def index
-    binding.pry
     render locals: {
-        results: ResultsFacade.new()
+      results: ResultsFacade.new(params[:house])
     }
   end
 end
