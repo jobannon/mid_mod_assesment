@@ -1,7 +1,6 @@
 class PotterService 
   def get_house(key)
     get_json('houses/5a05e2b252f721a3cf2ea33f')
-     
   end
 
   def get_member(member)
@@ -23,4 +22,4 @@ class PotterService
   end
 
 end
-https://www.potterapi.com/v1/houses/5a05e2b252f721a3cf2ea33f?key=$2a$10$voN3YahlYnnnPXz9Pc3OOecHTDuD9AaWfDD3KQbtNVTbYUlYFOXZi
+# https://www.potterapi.com/v1/houses/5a05e2b252f721a3cf2ea33f?key=$2a$10$voN3YahlYnnnPXz9Pc3OOecHTDuD9AaWfDD3KQbtNVTbYUlYFOXZi

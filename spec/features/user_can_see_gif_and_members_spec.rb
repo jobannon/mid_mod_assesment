@@ -13,6 +13,7 @@
 # - The members role (if it exists)
 # - The house the member belongs to
 # - The Patronus of the member (if it exists)
+require 'rails_helper' 
 
 RSpec.describe "As a user, When I visit my root" do 
   describe "when I select Gryffindor from the select field and click search" do 
@@ -21,8 +22,7 @@ RSpec.describe "As a user, When I visit my root" do
         -shows me each member (-name,-role,-house,-patronus)" do 
 
       visit "/"
-
-      select "Gryffindor"
+      select "Gryffindor", :from => :house 
 
       click_on "Search For Members"
 
